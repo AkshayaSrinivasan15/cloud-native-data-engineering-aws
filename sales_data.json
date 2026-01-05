@@ -1,0 +1,29 @@
+[
+  {
+    "order_id": 3001,
+    "order_date": "2024-07-01",
+    "customer_id": "C201",
+    "product": "Laptop",
+    "category": "Electronics",
+    "quantity": 1,
+    "unit_price": 72000
+  },
+  {
+    "order_id": 3002,
+    "order_date": "2024-07-01",
+    "customer_id": "C202",
+    "product": "Mouse",
+    "category": "Electronics",
+    "quantity": 2,
+    "unit_price": 900
+  },
+  {
+    "order_id": 3003,
+    "order_date": "2024-07-02",
+    "customer_id": "C203",
+    "product": "Table",
+    "category": "Furniture",
+    "quantity": 1,
+    "unit_price": 11000
+  }
+]

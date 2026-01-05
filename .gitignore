@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# AWS credentials (safety)
+.aws/
+
+# OS files
+.DS_Store
+Thumbs.db
