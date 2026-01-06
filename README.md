@@ -8,6 +8,36 @@
 ## Architecture
 S3 (Raw JSON) → Python ETL → Amazon RDS (PostgreSQL)  
 CloudWatch Logs for monitoring ETL execution
+```
+                 ┌──────────────────────┐
+                 │   Amazon S3           │
+                 │  (Raw JSON Data)      │
+                 └──────────┬───────────┘
+                            │
+                            │ boto3
+                            ▼
+                 ┌──────────────────────┐
+                 │  Python ETL Pipeline │
+                 │  (Extract & Transform│
+                 │   using pandas)      │
+                 └──────────┬───────────┘
+                            │
+                            │ SQL Inserts
+                            ▼
+                 ┌──────────────────────┐
+                 │ Amazon RDS            │
+                 │ PostgreSQL            │
+                 │ (Structured Storage) │
+                 └──────────┬───────────┘
+                            │
+                            │ Execution Logs
+                            ▼
+                 ┌──────────────────────┐
+                 │ Amazon CloudWatch     │
+                 │ (ETL Monitoring)     │
+                 └──────────────────────┘
+
+```
 
 ## Tech Stack
 - AWS S3
